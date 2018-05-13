@@ -4,20 +4,25 @@ Radiometry的中文意思叫做辐射学，为什么图形学中的shading部分
 
 ## Radiometry中几个重要的概念
 
--  Radiant energy(辐射能量),用Q表示，单位是焦耳(J)。每一个光子都有一定的radiant energy,频率越高能量就越高。
+### Radiant energy(辐射能量)
+辐射能量用Q表示，单位是焦耳(J)。每一个光子都有一定的radiant energy,频率越高能量就越高。
 
--  Radiant flux(辐射通量）,用Φ表示，单位是瓦特(watt)。它的定义是： radiant flux is the radiant energy emitted, reflected, transmitted or received per unit time. 也就是说在单位时间内发出、反射、转移或者接受的辐射能量,它可以用来表示光源的功率。dΦ = dQ/dt。
+### Radiant flux(辐射通量）
+辐射通量用Φ表示，单位是瓦特(watt)。它的定义是： radiant flux is the radiant energy emitted, reflected, transmitted or received per unit time. 也就是说在单位时间内发出、反射、转移或者接受的辐射能量,它可以用来表示光源的功率。dΦ = dQ/dt。
 
--  Irradiance(辐射照度),用E表示，单位是 W/m^2。它的定义是： irradiance is the radiant flux received by a surface per unit area.也就是说一个表面在单位面积上接收到的辐射通量。E=dΦ/dA.Irradiance 用来描述光源对表面照射时，单位面积上的辐射通量。
+### Irradiance(辐射照度)
+辐射照度用E表示，单位是 W/m^2。它的定义是： irradiance is the radiant flux received by a surface per unit area.也就是说一个表面在单位面积上接收到的辐射通量。E=dΦ/dA.Irradiance 用来描述光源对表面照射时，单位面积上的辐射通量。
 
--  Radiant exitance，用M表示。radiant exitance表示从被照射表面逃离的irradiance。
+### Radiant exitance
+用M表示。radiant exitance表示从被照射表面逃离的irradiance。
 
 在计算irradiance时，通常要用垂直于光线入射方向的平面来计算，当然也可以将光线分解在平面法线方向来进行计算。
 当场景里的光源是比较远的光源的时候，比如太阳光，可以认为irradiance恒定，即与光源到被照射表面的距离无关。当光源比较近的时候或者场景比较大的时候，irradiance不能被视为恒定值，其值与光源到被照射表面距离的平方成反比。
 
 但是怎么样确定这个光源多远算是远，多近才算是近呢？Lambert提出了一个5倍原则：如果光源到被照射表面的距离比光源的宽度的五倍还要大，那么我们就认为irradiance随着距离增加而衰减。
 
-- Solid angle(立体角),用Ω表示，单位是sr(steradians)。
+### Solid angle(立体角)
+用Ω表示，单位是sr(steradians)。
 
 立体角的定义是这样的，将空间中一个曲面投影到半径为1的单位球上，这个投影的面积就是立体角的值。
 
