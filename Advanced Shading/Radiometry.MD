@@ -1,8 +1,8 @@
-#Radiometry
+# Radiometry
 
 Radiometry的中文意思叫做辐射学，为什么图形学中的shading部分必须要以辐射学为基础呢？我想是因为Shading是模拟真实物理世界中光与物体交互的过程，在这个过程中，必将会有能量的转移，所以要用辐射来描述光与物体的交互过程中能量的变化。
 
-##Radiometry中几个重要的概念
+## Radiometry中几个重要的概念
 
 -  Radiant energy(辐射能量),用Q表示，单位是焦耳(J)。每一个光子都有一定的radiant energy,频率越高能量就越高。
 
